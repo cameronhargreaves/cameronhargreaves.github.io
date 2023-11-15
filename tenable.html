@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="tenable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="tenable.css" /> 
+</head>
+<body>
+    <h1 id="quizQuestion">What are Huddersfield Town's Top 10 Goalscorers of All Time?</h1>
+    <textarea id="answerArea"></textarea>
+    <button id="enterAnswers">Enter</button>
+
+    <div id="answers">
+        <div class="answer_box"><h2 id="answer_box_1">1</h2></div>
+        <div class="answer_box"><h2 id="answer_box_2">2</h2></div>
+        <div class="answer_box"><h2 id="answer_box_3">3</h2></div>
+        <div class="answer_box"><h2 id="answer_box_4">4</h2></div>
+        <div class="answer_box"><h2 id="answer_box_5">5</h2></div>
+        <div class="answer_box"><h2 id="answer_box_6">6</h2></div>
+        <div class="answer_box"><h2 id="answer_box_7">7</h2></div>
+        <div class="answer_box"><h2 id="answer_box_8">8</h2></div>
+        <div class="answer_box"><h2 id="answer_box_9">9</h2></div>
+        <div class="answer_box"><h2 id="answer_box_10">10</h2></div>
+    </div>
+
+    <div id="lives">
+        <div class = "heart"><img id = "heart_1" src="pixel_heart.png" alt="Heart Pixel Png"></div>
+        <div class = "heart"><img id = "heart_2" src="pixel_heart.png" alt="Heart Pixel Png"></div>
+        <div class = "heart"><img id="heart_3" src="pixel_heart.png" alt="Heart Pixel Png"></div>
+    </div>
+
+    <button id="retryButton" onclick="retryGame()"> Retry?</button> <br>
+    <button id="showAnswersBtn" onclick="showAnswers()"> Show Answers?</button> <br>
+    
+    <h1 id="timer">Timer</h1>
+    
+    <a href="calendar.html">Go Back</a>
+
+
+</body>
+</html>

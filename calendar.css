@@ -1,7 +1,11 @@
 body {
-    /* background-size; */
-    /* background-image: url("christmas_background.jpg"); */
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
+  
   
   /* title graphic */
   .title {  
@@ -168,7 +172,7 @@ body {
       
       /* typography */
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #385052;
+      color: white;
       font-size: 2em;
       font-weight: bold;
       text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);

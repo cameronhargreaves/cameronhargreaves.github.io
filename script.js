@@ -1,9 +1,9 @@
 $(document).ready(documentReady);
 
 function documentReady() {
-  var MAX_SNOW = 200;
+  var MAX_SNOW = 300;
   var MAX_SNOW_SIZE = 15;
-  var MAX_SNOW_SPEED = 1;
+  var MAX_SNOW_SPEED = 0.25;
 
   snowStart();
 
@@ -24,14 +24,12 @@ function documentReady() {
       goAnimate(animateItem, i, randomTime);
       goAnimate2(animateItem);
     };
-
-    // console.log("// Create snows");
   }
 
   function goAnimate(item, id, randomTime) {
     gsap.to(item, randomTime, {
       css: {
-        marginTop: "+=100"
+        marginTop: "+=5"
       },
       ease: Linear.easeNone,
       onComplete: function() {
@@ -155,5 +153,4 @@ function documentReady() {
     var item = "<div class='snow" + id + "' style='position:absolute; margin-left: " + left + "px; margin-top: " + top + "px; width: " + width + "px; height: " + height + "px; border-radius: 50%; background-color: white; -webkit-filter: blur(" + blur + "px); -moz-filter: blur(" + blur + "px); -o-filter: blur(" + blur + "px); -ms-filter: blur(" + blur + "px); filter: blur(" + blur + "px);'></div>"
     return item;
   }
-
 }

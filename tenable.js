@@ -3,9 +3,11 @@ CORRECT_ANSWERS = 0
 LIVES = 3
 
 $(document).ready(function () {
-    fillAnswers()
+
+    fillAnswers();
+
     $("#enterAnswers").click(function () {
-        if ((ANSWERS != []) & (CORRECT_ANSWERS != 10)) {
+        if ((ANSWERS != []) & (CORRECT_ANSWERS != 10) & (LIVES != 0)) {
             var answer = $("#answerArea").val();
             answers_lower = ANSWERS.map(answer => answer.toLowerCase());
             if (answers_lower.indexOf(answer.toLowerCase()) != -1) {
@@ -28,7 +30,7 @@ $(document).ready(function () {
     })
 
     var countDownDate = new Date()
-    countDownDate.setMinutes ( countDownDate.getMinutes() + 5 );
+    countDownDate.setSeconds ( countDownDate.getSeconds() + 2 );
     
     setInterval(function() {
         var now = new Date()
@@ -42,11 +44,11 @@ $(document).ready(function () {
         document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
 
         if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+          document.getElementById("timer").innerHTML = "OUT OF TIME!";
+          loseLife(lose_all_lives=true)
+          clearInterval();
           }
           }, 1000);
-
 })
 
 function fillAnswers() {
@@ -75,8 +77,9 @@ function showAnswers() {
     }
 }
 
-function loseLife() {
-    if (LIVES == 0) {
+function loseLife(lose_all_lives=false) {
+    if ((LIVES == 0) | (lose_all_lives)) {
+        LIVES = 0
         console.log("FAILURE");
         $("#lives").hide()
         $("#retryButton").show();

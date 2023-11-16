@@ -52,18 +52,26 @@ $(document).ready(function () {
 })
 
 function fillAnswers() {
-    ANSWERS = ['Jordan Rhodes', 'Andy Booth', 'Marcus Stewart' ,
-    'Nakhi Wells', 'Pawel Abbott', 'Lee Novak',
-    'Danny Ward', 'Gary Roberts', 'Danny Schofield', 'James Vaughan']
-    $("#retryButton").hide();
-    $("#showAnswersBtn").hide();
-    $("#lives").show();
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('index');
+  console.log(greetingValue);  
 
-    for (let i = 1; i <= 10; i++) {
-        answer_box = "#answer_box_" + i
-        $(answer_box).removeClass("incorrect_answer")
-        $(answer_box).text(i)
-    }
+  $.getJSON("questions_nufc.json", function( data ) {
+    var content = data['dates'][greetingValue]
+    console.log(content)
+    ANSWERS = content['answers']
+    $("#quizQuestion").text(content['question'])
+  });
+
+  $("#retryButton").hide();
+  $("#showAnswersBtn").hide();
+  $("#lives").show();
+
+  for (let i = 1; i <= 10; i++) {
+      answer_box = "#answer_box_" + i
+      $(answer_box).removeClass("incorrect_answer")
+      $(answer_box).text(i)
+  }
 }
 
 function showAnswers() {

@@ -1,0 +1,88 @@
+body {
+    max-width: max-content;
+    max-height: max-content;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    /* border: 5px dashed black; */
+    text-align:center;
+    padding-bottom: 50px;
+    background-color: wheat;
+}
+
+img {
+    filter: blur(10px);
+}
+
+.year_guess {
+    background-color: white;
+    border-radius: 25px;
+    text-align:center;
+    margin: auto;
+    box-shadow: 5px 5px 5px blue;
+    display: inline;
+    padding: 5px;
+    width: 100px;
+}
+
+#years {
+    display: flex;
+    justify-content:space-between;
+}
+
+.correct_answer {
+    background-color: greenyellow;
+}
+
+.incorrect_answer {
+    background-color: red;
+}
+
+#gameOverText {
+    color:red;
+}
+
+#score_section {
+    display: flex;
+}
+
+@font-face {
+    font-family: "Silkscreen";
+    src: url(font/slkscr.ttf);
+  }
+
+  #bonus {
+    color:red;
+    font-family: "Silkscreen";
+    -webkit-transform: rotate(15deg);
+
+    /* Firefox */
+    -moz-transform: rotate(15deg);
+
+    /* IE */
+    -ms-transform: rotate(15deg);
+
+    /* Opera */
+    -o-transform: rotate(15deg);
+
+    /* Standard */
+    transform: rotate(15deg);
+}
+
+#bonus .fadeInOut {
+    animation: opacityOnAndOff normal forwards;
+    animation-duration: 1s; 
+    animation-delay: 0s;
+}
+
+@keyframes opacityOnAndOff {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

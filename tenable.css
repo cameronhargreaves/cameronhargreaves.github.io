@@ -4,7 +4,7 @@
     width: 300px;
     text-align:center;
     margin: auto;
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 5px 5px 5px blue;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     /* border: 5px dashed black; */
     text-align:center;
     padding-bottom: 50px;
-    background-color: black;
+    background-color: wheat;
 }
 
 
@@ -24,13 +24,12 @@ body {
     padding: 5px;
     width:50px;
     height:50px;
-    /* border: 5px solid white */
 }
 
 h1, h2, a {
     font-size: x-large; 
     padding:5px;
-    color: white;
+    color: black;
 }
 
 .answer_box h2 {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <title>Guess the Kit!</title>
+    <link rel="stylesheet" type="text/css" href="guess_the_kit.css" /> 
+    <script src="guess_the_kit.js"></script>
+</head>
+<body>
+    <h1> What year is this kit from?</h1>
+
+    <h2 id="gameOverText" hidden>GAME OVER! TRY AGAIN!!</h2>
+
+    <img src="/kits/23-24_home.jpg" id="kit">
+
+    <div id="years">    
+        <div class="year_guess" onclick="yearGuessed(this)"><h2 id="answer_box_1">-</h2></div>
+        <div class="year_guess" onclick="yearGuessed(this)"><h2 id="answer_box_2">-</h2></div>
+        <div class="year_guess" onclick="yearGuessed(this)"><h2 id="answer_box_3">-</h2></div>
+    </div>
+
+    <br>
+    <button id="nextBtn"> Next! </button>
+    <button id="tryAgainBtn" hidden> Try Again! </button>
+
+    <div id="score_section">
+        <h2 id="score">Score : 0</h2>
+        <h3 id="bonus"> (+0!)</h3>
+    </div>
+    <h2 id="high_score">High Score : 55</h2>
+</body>
+</html>

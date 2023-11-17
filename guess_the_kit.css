@@ -11,6 +11,7 @@ body {
 
 img {
     filter: blur(10px);
+    width:80%
 }
 
 .year_guess {
@@ -43,6 +44,7 @@ img {
 
 #score_section {
     display: flex;
+    padding-left: 5px;
 }
 
 @font-face {

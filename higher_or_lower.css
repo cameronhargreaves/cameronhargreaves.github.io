@@ -1,0 +1,41 @@
+#main_content {
+    width: 150%;
+    display:block;
+    height:100%;
+}
+
+#title {
+    text-align: center;
+}
+
+.guess {
+    width: 33.333333333333333333%;
+    height:100%;
+    float:left;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    line-height: 10px;
+    text-align: center;
+    align-items: center; 
+}
+
+.guess h1,h2 {
+    width:100%;
+    font-size: 50px;
+}
+
+.nextBtn {
+    width:80%;
+    height: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    font-size: 30px;
+
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.hidden {
+    display: none;
+}

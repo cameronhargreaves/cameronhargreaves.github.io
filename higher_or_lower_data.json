@@ -1,0 +1,68 @@
+{
+    "Alan Shearer": {
+        "goals": 999999999,
+        "assists" : 1,
+        "img_file": "img/shearer.jpg",
+        "in_use": false
+    },
+    "Rasmus Hojlund": {
+        "goals": 25,
+        "assists" : 1,
+        "img_file": "img/hojlund.jpg",
+        "in_use": false
+    },
+    "Erling Haaland": {
+        "goals": 2000,
+        "assists" : 12,
+        "img_file": "img/haaland.jpg",
+        "in_use": false
+    },
+    "Michal Helik": {
+        "goals": 4,
+        "assists" : 1,
+        "img_file": "img/helik.jpg",
+        "in_use": false
+    },
+    "Jack Rudoni": {
+        "goals": 3,
+        "assists" : 1,
+        "img_file": "img/rudoni.jpg",
+        "in_use": false
+    },
+    "Kian Harratt": {
+        "goals": 2,
+        "assists" : 1,
+        "img_file": "img/harratt.jpg",
+        "in_use": false
+    },
+    "Delano Burgzorg": {
+        "goals": 2,
+        "assists" : 1,
+        "img_file": "img/burgzorg.jpg",
+        "in_use": false
+    },
+    "Matty Pearson": {
+        "goals": 1,
+        "assists" : 1,
+        "img_file": "img/pearson.jpg",
+        "in_use": false
+    },
+    "Sorba Thomas": {
+        "goals": 1,
+        "assists" : 1,
+        "img_file": "img/sorba.jpg",
+        "in_use": false
+    },
+    "Kyle Hudlin": {
+        "goals": 1,
+        "assists" : 1,
+        "img_file": "img/hudlin.jpg",
+        "in_use": false
+    },
+    "Josh Koroma": {
+        "goals": 1,
+        "assists" : 1,
+        "img_file": "img/koroma.jpg",
+        "in_use": false
+    }
+}
